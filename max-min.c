@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(){
 int i, number, min = 0, max = 0, counter;
+float total_all, average_all;
 printf ("How many number do you want to enter: ");
 scanf ("%d", &counter);
 if (counter == 0){
@@ -20,12 +21,16 @@ if (counter == 0){
 
 				if (number > max)
 					max = number;
+				total_all += number;
 				}
 			}
 	printf ("%d %d\n", max, min);
 	float average = (max + min) / 2;
 	int total = max + min;
+	average_all = total_all / i;
 printf ("max + min = %d\n", total);
 printf ("Average of max and min is:%.1f\n", average);
+printf ("Total of all: %.1f\n", total_all);
+printf ("Average of all : %f\n", average_all);
 return 0;
 }
