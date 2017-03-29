@@ -1,22 +1,30 @@
 #include <stdio.h>
+int equation(int number);
 int main (){
-      int number, i = 1, flag = 0;
-      printf ("Enter number: ");
-      scanf ("%d", &number);
+      int number;
 
-      while (i<number-1){
-            i++;
-            if (number % i == 0){
-                  flag = 1;
+      printf ("Enter a number: ");
+      scanf ("%d", &number);
+      if (number == 2){
+            printf ("2 is the smallest prime number\n");
+      }
+      equation(number);
+      return 0;
+}
+
+int equation(int number){
+      int counter = 2;
+      int result;
+      while (counter < number){
+            result = number % counter;
+            if (result == 0){
+                  printf ("%d isn't prime, divided by %d \n", number, counter);
                   break;
             }
+            else {
+                  counter++;
+                  printf ("%d is prime\n", number);
+            }
       }
-
-      if (flag == 0){
-            printf ("Entered number is a prime number\n");
-      }
-      else {
-            printf ("Entered number is not a prime number\n");
-      }
-      return 0;
+      return result;
 }
