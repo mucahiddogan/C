@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int main(){
 	char metin[30];
 	int i, counter=0;
