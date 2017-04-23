@@ -1,4 +1,5 @@
 # C-mchd-for-alghoritm
+
 intro - made for learning "for" loop
 
 For döngüsünü öğrenebilmek amacıyla oluşturduğum intro.
