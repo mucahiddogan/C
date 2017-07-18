@@ -1,1 +1,0 @@
-10 yıllık faiz miktarını hesaplayan program.
