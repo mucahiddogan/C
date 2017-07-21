@@ -1,5 +1,6 @@
 Açıklama Hazırlanıyor...
 
-[dik_ucgen](./dikucgen/)
-  -- Döngü kullanarak yıldızlardan dik üçgen çizen kod
+[dik_ucgen](./dik_ucgen/)
+
+  - Döngü kullanarak yıldızlardan dik üçgen çizen kod
   
